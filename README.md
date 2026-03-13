@@ -1,4 +1,4 @@
 # Zomato-Landing-page
 A Clone of Zomato Landing Page.
 
-Link :-  https://github.com/Sajal-28/Zomato-Landing-page
+Link :-  https://sajal-28.github.io/Zomato-Landing-page/
