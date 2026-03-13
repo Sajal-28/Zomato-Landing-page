@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Permanent+Marker&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main {
+    background-image: url("./Images/Backgroundimg.png");
+    height: 60.32vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 111vw);
+    
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    height: 72px;
+}
+
+.app {
+    font-family: "Nunito", sans-serif;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar ul li a{
+    font-family: "Nunito", sans-serif;
+    text-decoration: none;
+    padding: 0.8rem;
+    margin: 5px; 
+    font-size: 1.19rem;
+    line-height: 1.5;
+    text-align: right;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    border-radius: 0.6rem;   
+}
+
+.hero {
+    width: 100%;
+    height: 53%;
+    margin-top: 1.75%;
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+}
+
+.hero img {
+    height: 28.5%;
+    width: 19%;
+}
+
+.hero span {
+    font-family: "Nunito", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 2.35rem;
+    font-weight: 380;
+    line-height: 70px;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-top: 1.5rem;
+}
+
+.search {
+    background-color: white;
+    width: 800px;
+    height : 8rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.search-content1 {
+    height: 100%;
+    width: 15.5rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-content1 .svg1 {
+    margin-right: 2px;
+}
+
+.search-content1 input {
+    width: 11rem;
+    height: 1.2rem;
+    font-size: 0.93rem;
+    font-weight: 400;
+    font-family: "Nunito", sans-serif;
+    border: none;
+    outline: none;
+}
+
+.search-content1 .svg2 {
+    margin-left: 4px;
+}
+
+.line {
+    background-color: rgb(207 207 207);
+    height: 20px;
+    width: 1.5px;
+    margin-top: 15px;
+}
+
+.search-content2 {
+    height: 100%;
+    border-radius: 10px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-content2 .svg3 {
+    margin-right: 14px;
+    margin-left: 15px;
+}
+
+.search-content2 input {
+    width: 30rem;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 0.93rem;
+    font-family: "Nunito", sans-serif;
+}
+
+.sub-main {
+    height: fit-content;
+    width: 100%;
+}
+
+.main1-card {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.8%;
+    gap: 20px;
+}
+
+.card1, .card2, .card3 {
+    height: 15rem;
+    width: 23.38vw;
+    transition: transform 0.3s ease;
+    transform-origin: center;
+}
+
+.card-image1 {
+    height: 65%;
+    width: 100%;
+    background-image: url("./Images/OrderOnline.png");
+    background-position: center, top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-image2 {
+    height: 65%;
+    width: 100%;
+    background-image: url("./Images/Dining.png");
+    background-position: center, top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-image3 {
+    height: 65%;
+    width: 100%;
+    background-image: url("./Images/Nightlife.png");
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content1, .card-content2, .card-content3 {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(207 207 207);
+    width: 100%;
+    height: fit-content;
+    font-family: "Nunito", sans-serif;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-content1 .head, .card-content2 .head, .card-content3 .head{
+    font-size: 20px;
+    margin-top: 2.9%;
+    margin-left: 5.6%;
+    margin-right: 5.6%;
+    font-weight: 450;
+}
+
+.card-content1 .alt, .card-content2 .alt, .card-content3 .alt {
+    font-size: 17px;
+    margin-left: 5.6%;
+    margin-right: 5.6%;
+    margin-top: 0.4%;
+    margin-bottom: 5.9%;
+    color: #4f4f4f;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: scale(1.05);
+}
+
+.collection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.collection-title {
+    font-size: 36px;
+    width: 72.3%;
+    margin-top: 5rem;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.1px;
+}
+
+.collection-content {
+    display: flex;
+    justify-content: space-between;
+    width: 72.3%;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.4px;
+}
+
+.coll-head {
+    font-size: 18px;
+    font-weight: 250;
+    margin-top: 0.4rem;
+}
+
+.coll-alt {
+    margin-top: 0.4rem;
+    color: #ff7e8b;
+}
+
+.main2-card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1.9rem;
+}
+
+.card4, .card5, .card6, .card7{
+    height: 20rem;
+    width: 17.4vw;
+}
+
+.card-image4 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/Great_Cafes.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: inset 0 -150px 100px -80px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.card-image5 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/Best_Luxury.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: inset 0 -150px 100px -80px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.card-image6 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/Best_Bar.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: inset 0 -150px 100px -80px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.card-image7 {
+    width: 100%;
+    height: 100%;
+    background-image: url("./Images/Serene_rooftop.png");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: cover;
+    border-radius: 7px;
+    box-shadow: inset 0 -150px 100px -80px black;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.head4, .head5, .head6, .head7 {
+    font-size: 18px;
+    color: aliceblue;
+    font-family: "Nunito", sans-serif;
+    margin-left: 1rem;
+    margin-bottom: 0.1rem;
+    letter-spacing: 0.4px;
+}
+
+.alt4, .alt5, .alt6, .alt7 {
+    font-size: 14.5px;
+    color: aliceblue;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 0.65rem;
+    margin-left: 1rem;
+}
+
+.Popular {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.Popular-content {
+    width: 72.3%;
+    font-size: 36px;
+    font-family: "Nunito", sans-serif;
+    color: #363636;
+    letter-spacing: 0.6px;
+}
+
+.Popular-content span {
+    font-weight: 600;
+    color: #363636;
+}
+
+.main3-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 2.5rem;
+}
+
+.Pre-card1 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 72.3%;
+}
+
+.Pre-card2 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 72.3%;
+}
+
+.Pre-card3 {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 72%;
+}
+
+.card8, .card9, .card10, .card11, .card12, .card13, .card14, .card15, .card16 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(232 232 232);
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+    transition: box-shadow 0.1s ease;
+}
+
+.card8:hover, .card9:hover, .card10:hover, .card11:hover, .card12:hover, .card13:hover, .card14:hover, .card15:hover, .card16:hover {
+    box-shadow: rgba(28, 28, 28, 0.10) 0px 4.42623px 5.85246px;
+}
+
+.head8, .head9, .head10, .head11, .head12, .head13, .head14, .head15, .head16 {
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    margin-left: 16px;
+    margin-top: 13px;
+    margin-bottom: 5px;
+}
+
+.alt8, .alt9, .alt10, .alt11, .alt12, .alt13, .alt14, .alt15, .alt16 {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-left: 16px;
+    margin-bottom: 13px;
+}
+
+.Arrow {
+    margin-right: 1rem;
+}
+
+.Arrow-down {
+    margin-top: 0.7rem;
+}
+
+.GetApp {
+    background-color: #fffbf7;
+    margin-top: 7.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.GetApp-flex {
+    display: flex;
+    gap: 40px;
+    
+    /* margin-top: 3.438rem;
+    margin-right: 5.625rem; */
+}
+
+.mobile img{
+    height: 69.32vh;
+    margin-top: 1.875rem;
+}
+
+.zomato-app {
+    font-size: 46px;
+    font-weight: 650;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.6px;
+    margin-bottom: 0.938rem;
+}
+
+.zomato-app-download {
+    font-size: 17px;
+    font-family: "Nunito", sans-serif;
+    letter-spacing: 0.6px;
+    color: #363636;
+    width: 32rem;
+}
+
+.zomato-title {
+    margin-top: 56px;
+}
+
+
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 25px;
+}
+
+.mail {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.download {
+    margin-top: 25px;
+}
+
+input[type='radio'] {
+    accent-color: #e03546;
+    width: 19px;
+}
+
+.Email {
+    font-size: 18px;
+    margin-right: 55px;
+}
+
+.Phone {
+    font-size: 18px;  
+}
+
+
+.mail input[type="text"] {
+    padding: 12px 15px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.mail input[type="text"]:focus {
+    border-color: #e03546;
+}
+
+.mail button {
+    padding: 12px 20px;
+    background-color: #e03546;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.mail button:hover {
+    background-color: #c6283c;
+}
+
+.download {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.stores {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.stores img {
+    height: 55px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+}
+
+.stores img:hover {
+    transform: scale(1.08);
+}
+
+.footer {
+    background-color: #f8f8f8;
+    margin-top: 4rem;
+    padding: 3rem 5rem;
+    font-family: "Nunito", sans-serif;
+    color: #363636;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-logo img {
+    height: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+    color: #555;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-links ul li a:hover {
+    color: #e03546;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+    margin-top: 2rem;
+}
+
+.navbar.navbar-sticky {
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.card-image4.selected, .card-image5.selected, .card-image6.selected, .card-image7.selected {
+    outline: 4px solid rgba(224,55,70,0.12);
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+
+/* For responsiveness */
+
+@media (max-width: 1200px) {
+    .main1-card, .main2-card, .Pre-card1, .Pre-card2, .Pre-card3 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar ul {
+        flex-direction: column;
+        background: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+    .navbar ul.active {
+        display: flex;
+    }
+    .hero span {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .search {
+        width: 95%;
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+    .search-content1, .search-content2 {
+        width: 100%;
+        margin: 5px 0;
+    }
+    .GetApp-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile img {
+        height: 45vh;
+    }
+    .mail {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .mail input[type="text"] {
+        width: 90%;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero span {
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .zomato-app {
+        font-size: 28px;
+    }
+    .mail input[type="text"] {
+        width: 100%;
+    }
+    .stores img {
+        height: 48px;
+    }
+    .card1, .card2, .card3, .card4, .card5, .card6, .card7 {
+        width: 90%;
+    }
+}
