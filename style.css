@@ -14,8 +14,7 @@
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 111vw);
-    
+    background-size: cover;
 }
 
 .navbar {
@@ -101,17 +100,18 @@
 
 .search {
     background-color: white;
-    width: 800px;
-    height : 8rem;
+    width: min(800px, 90vw);
+    height: 8rem;
     margin-top: 15px;
     border-radius: 10px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .search-content1 {
     height: 100%;
-    width: 15.5rem;
+    width: min(15.5rem, 40%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -165,7 +165,7 @@
 }
 
 .search-content2 input {
-    width: 30rem;
+    width: min(30rem, 100%);
     height: 90%;
     border: none;
     outline: none;
@@ -189,7 +189,7 @@
 }
 
 .card1, .card2, .card3 {
-    height: 15rem;
+    height: min(15rem, 30vh);
     width: 23.38vw;
     transition: transform 0.3s ease;
     transform-origin: center;
@@ -308,7 +308,7 @@
 }
 
 .card4, .card5, .card6, .card7{
-    height: 20rem;
+    height: min(20rem, 40vh);
     width: 17.4vw;
 }
 
@@ -494,7 +494,8 @@
 }
 
 .mobile img{
-    height: 69.32vh;
+    height: min(69.32vh, 500px);
+    width: auto;
     margin-top: 1.875rem;
 }
 
@@ -896,5 +897,43 @@ input[type='radio'] {
     }
     .navbar {
         padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        width: 50%;
+    }
+    .hero span {
+        font-size: 1.2rem;
+        padding: 0 0.5rem;
+    }
+    .search {
+        height: 6rem !important;
+        padding: 4px 8px !important;
+    }
+    .search-content1, .search-content2 {
+        height: 36px !important;
+    }
+    .search-content1 input {
+        font-size: 12px !important;
+    }
+    .search-content2 input {
+        font-size: 14px !important;
+    }
+    .collection-title, .Popular-content {
+        font-size: 1.5rem;
+    }
+    .zomato-app {
+        font-size: 1.8rem;
+    }
+    .zomato-app-download {
+        font-size: 0.9rem;
+    }
+    .mail input[type="text"] {
+        font-size: 14px;
+    }
+    .mail button {
+        font-size: 14px;
     }
 }
